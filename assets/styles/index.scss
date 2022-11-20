@@ -1,0 +1,182 @@
+@use './vars';
+
+/* $gutter: 1em;
+$fft: 'Comfortaa', cursif;
+$ff: 'Tinos', 'sans-serif';
+$cd-txt: #6300a0;
+$cd-txt--invalid: #fff;
+$cd-danger: #b20a37;
+$cd-box: #fff;
+$cd-btn: #011c37;
+$cd-txt: #15DEA5;
+$color1: rgb(47, 37, 75);
+$color2: rgb(34, 36, 77); */
+/* a:link { color: blue; }          Liens non visités
+a:visited { color: rgb(197, 188, 197); }     Liens visités
+a:hover { background: yellow; }  Liens survolés
+a:active { color: red; }         Liens actifs */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    background-color: #ccc;
+    // overflow-x: hidden;
+    // background-color: vars.$bgLight;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    // background-color: vars.$bgLight;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: #FF0099;
+    // border-bottom: 2px solid #FFF;
+    padding: 10px;
+    z-index: 2;
+    &__nav {
+        float: left;
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+        &__logo {
+            float: left;
+            width: 130px;
+        }
+        &__link {
+            text-decoration: none;
+            font-size: 1.2em;
+            // padding: 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            color: #fff;
+            transition: all 1s ease-out;
+            // &:hover,:focus {
+            //     color: #333;
+            //     background-color: lightgrey;
+            // }
+            &:hover {
+                color: blue;
+            }
+        }
+        &__button {
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.footer {
+    position: relative;
+    bottom: -180px;
+    width: 100%;
+    background-color: #FF0099;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    &__link {
+        margin: 0 10px;
+        text-decoration: none;
+        color: white;
+        transition: all 1s ease-out;
+        font-size: 1.2em;
+        &:hover {
+            color: blue;
+        }
+    }
+}
+
+.la-angle-down {
+    position: absolute;
+    left: auto;
+    right: 20px;
+}
+.reserve {
+    padding: 0;
+    position: fixed;
+    width: 300px;
+    top: 100px;
+    right: 0;
+    left: auto;
+    background-color: white;
+    z-index: 3;
+    &__button {
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        padding: 5px;
+        border-radius: 20px;
+        letter-spacing: .1em;
+    }
+    &__text {
+        margin: 0;
+        font-size: 1.3em;
+    }
+    &__list {
+        list-style-type: none;
+        &__text {
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+    }
+}
+
+// .reserve {
+//     position: absolute;
+//     top: 45%;
+//     left: 25%;
+//     background-color: white;
+//     // border-radius: 10px;
+//     &__button {
+//         width: 100%;
+//         // border: none;
+//         // border-radius: 50px;
+//     }
+//     &__text {
+//         font-size: 1.2em;
+//         padding: 0;
+//         margin: 0;
+//     }
+// }
+
+.la-angle-down {
+    margin-left: 20px;
+}
+/* ---- MESSAGES FLASH ---- */
+.alert-error {
+    background-color: red;
+    font-size: 1.3em;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: green;
+    font-size: 1.3em;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.alert-message {
+    background-color: grey;
+    font-size: 1.3em;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.alert-warning {
+    background-color: orange;
+    font-size: 1.3em;
+    padding: 20px;
+    margin-bottom: 20px;
+}

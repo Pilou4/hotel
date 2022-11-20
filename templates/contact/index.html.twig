@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page contact{% endblock %}
+
+{% block body %}
+    <main class="contact">
+    <section class="contact__header">
+        <h1 class="contact__header__title">Accès et contact</h1>
+        <img
+            src="{{ asset('images/chambre.jpg') }}"
+            alt="deventure du restaurant"
+            class="contact__header__img"
+        >
+    </section>
+    <section class="contact__map">
+        <div class="contact__map__left">
+            <h2 class="contact__map__title">Bar</h2>
+            <h3 class="contact__map__name">Le Nid</h3>
+            <p class="contact__map__adress"> 2 rue de la gare, 78490 Galluis</p>
+            <p class="contact__map__phone">06 06 06 06 06</p>
+            <button class="contact__map__button">Réserver</button>
+        </div>
+        <div class="contact__map__right">
+            <div id="map"></div>
+        </div>
+    </section>
+    <section class="contact__form">
+        <h2 class="contact__form__title">Nous contacter</h2>
+        {{ form_start(form) }}
+            <table class="contact__form__table">
+                <tr>
+                    <td>{{ form_row(form.firstname) }}</td>
+                    <td>{{ form_row(form.lastname) }}</td>
+                </tr>
+                <tr>
+                    <td>{{ form_row(form.mail) }}</td>
+                    <td>{{ form_row(form.phone) }}</td>
+                </tr>
+            </table>
+            {{ form_row(form.message) }}
+        <button class="contact__form__button">Envoyer</button>
+        {{ form_end(form) }}
+    </section>
+    {% include "@info/_info.html.twig" %}
+</main>
+{% endblock %}

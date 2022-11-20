@@ -1,0 +1,88 @@
+.info {
+    // margin-bottom: 120px;
+    &__title {
+        margin: 0;
+        padding: 20px;
+        margin-bottom: 30px;
+        text-align: justify;
+        font-size: 5em;
+        font-weight: 500;
+        font-family: 'Parisienne', serif;
+        font-style: italic;
+    }
+    &__subtitle {
+        font-size: 1.4em;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: .25rem;
+        // border-bottom: 1px solid green;
+        margin: 0;
+        padding: 5px;
+        &__border {
+            margin: 5px 5px 20px 5px;
+            border-bottom: 2px solid #be8c4e;;
+            width: 60px;
+        }
+    }
+    &__content {
+        font-size: 1.2em;
+        margin: 0;
+        padding: 5px;
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    &__contents {
+        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &__left {
+            width: 70%;
+        }
+        &__right {
+            width: 30%;
+        }
+        &__bottom {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__contact {
+        padding: 20px;
+        background-color: lightblue;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        &__title {
+            letter-spacing: .15rem;
+            text-transform: uppercase;
+            font-size: 1.4em;
+            font-weight: normal;
+        }
+        &__section {
+            margin: 0 20px;
+            padding: 20px;
+            &__adress {
+                padding: 0 10px;
+            }
+            &__reseaux {
+                display: flex;
+                justify-content: center;
+                &__link {
+                    margin: 0 10px;
+                }
+            }
+            &__buttons {
+                display: flex;
+                flex-direction: column;
+            }
+            &__button {
+                border-radius: 5px;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

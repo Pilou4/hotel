@@ -1,0 +1,15 @@
+<header class="header">
+    <a href="#" class="header__icon" id="header__icon"></a>
+    <a href="{{ path('homepage') }}"><img src={{ asset('images/logo3.png')}} alt="logo du site" class="header__nav__logo"></a>
+    <nav class="header__nav">
+        <a href="{{ path('homepage') }}" class="header__nav__link">accueil</a>
+        <a href="{{ path('accommodation') }}" class="header__nav__link">l'hébergement</a>
+        <a href="{{ path('homepage') }}" class="header__nav__link">restaurant</a>
+        <a href="{{ path('homepage') }}" class="header__nav__link">séminaire</a>
+        <a href="{{ path('galerie') }}" class="header__nav__link">galerie photo</a>
+        <a href="{{ path('contact') }}" class="header__nav__link">accés contact</a>
+        <button class="header__nav__button">Réservation</button>
+        {# <a href="#" class="header__nav__link"><i class="lab la-facebook la-2x"></i></a>
+        <a href="#" class="header__nav__link"><i class="lab la-twitter la-2x"></i></a> #}
+    </nav>
+</header>

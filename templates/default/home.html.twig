@@ -1,0 +1,265 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'accueil{% endblock %}
+
+{% block body %}
+    <main class="home">
+            
+            <div class="home__container">
+{#                 
+                <section class="home__container__left">
+                    <h2 class="home__container__left__title">L'hébergement</h2>
+                    <button class="home__button home__container__left__button--accommodation">plus d'inforamtions</button>
+                    <section class="accommodation">
+                        <article class="accommodation__items">
+                            <div class="accommodation__item">
+                                <h3 class="accommodation__title">Nos nouveaux équipements</h3>
+                                <p class="accommodation__text">Climatisation</p>
+                                <p class="accommodation__text">Salle de bain avec baignoire ou douche hydrojet</p>
+                                <p class="accommodation__text">Ecran plat 130cm</p>
+                                <p class="accommodation__text">Plateau de courtoisie (thé, café)</p>
+                                <p class="accommodation__text">84 chambres (simples, doubles, triples, familles)</p>
+                                <p class="accommodation__text">Chaînes nationales + 4 chaînes satelittes + canal + téléphone</p>
+                                <p class="accommodation__text">Wifi gratuit</p>
+                                <h4 class="accommodation__service">Les services que proposent l'hôtel</h4>
+                                <p class="accommodation__text">réception 24h/24</p>
+                                <p class="accommodation__text">service fax à la réception</p>
+                                <p class="accommodation__text">salon</p>
+                                <p class="accommodation__text">parking privé gratuit</p>
+                                <p class="accommodation__text">navette gratuite en direction de l'aéroport sur simple appel de 6h30 à 22h30 au 01 01 01 01 01</p>
+                            </div>
+                        </article>
+                    </section>
+                    <h2 class="home__container__left__title">Restauration</h2>
+                    <h3 class="home__container__left__subtitle">menu</h3>
+                    <button class="home__button home__container__left__button--menu">afficher les menus</button>
+                    <section class="menu">
+                        <article class="menu__items">
+                            <div class="menu__item">
+                                <h3 class="menu__title">Menu Reunion 13€62</h3>
+                                <h4 class="menu__subtitle">Entrées</h4>
+                                <p class="menu__content">tartare de tomate et de chévre</p>
+                                <p class="menu__content">velouté de courgette au parmesan</p>
+                                <h4 class="menu__subtitle">Plats</h4>
+                                <p class="menu__content">poulet basquaise</p>
+                                <p class="menu__content">lieu rôti aux légumes</p>
+                                <h4 class="menu__subtitle">Dessert et fromage</h4>
+                                <p class="menu__content">Plateau de fromage</p>
+                                <p class="menu__content">moelleux au chocolat</p>
+                                <p class="menu__content">Tarte maison</p>
+                                <p class="menu__annexe">Café compris, vin en supplémément</p>
+                            </div>
+                            <div class="menu__item">
+                                <h3 class="menu__title">Menu invitation 16€76</h3>
+                                <h4 class="menu__subtitle">Entrées</h4>
+                                <p class="menu__content">lasagnes d'aubergines à la provençale</p>
+                                <p class="menu__content">carpaccio de saumon</p>
+                                <h4 class="menu__subtitle">Plats</h4>
+                                <p class="menu__content">magret de canard</p>
+                                <p class="menu__content">truite en papillote aux olives</p>
+                                <h4 class="menu__subtitle">Dessert et fromage</h4>
+                                <p class="menu__content">nougat glacé</p>
+                                <p class="menu__content">crème  brûlé à la cassonade</p>
+                                <p class="menu__annexe">Café compris, vin en supplémément</p>
+                            </div>
+                            <div class="menu__item">
+                                <h3 class="menu__title">Menu prestige 18€86</h3>
+                                <h4 class="menu__subtitle">Entrées</h4>
+                                <p class="menu__content">salade verte et poêlée de saint-Jacques</p>
+                                <p class="menu__content">assiette de foie gras</p>
+                                <h4 class="menu__subtitle">Plats</h4>
+                                <p class="menu__content">souris d'agneau au romarin</p>
+                                <p class="menu__content">bar au pistou</p>
+                                <h4 class="menu__subtitle">Dessert et fromage</h4>
+                                <p class="menu__content">Plateau de fromage</p>
+                                <p class="menu__content">profiteroles au chocolat</p>
+                                <p class="menu__content">soupe de fruits</p>
+                                <p class="menu__annexe">Café compris, vin en supplémément</p>
+                            </div>
+                            <div class="menu__item">
+                                <h3 class="menu__title">autres formules proposé</h3>
+                                <h4 class="menu__text">Donnez du gôut à vos repas en dégustant nos formules et nos buffet à volonté.</h4>
+                                <ul class="menu__list">
+                                    <li class="menu__list__description">petit déjeuner buffet</li>
+                                    <li class="menu__list__description">buffet de hors d'oeuvres et de desserts</li>
+                                    <li class="menu__list__description">plat à la carte</li>
+                                    <li class="menu__list__description">banquets, mariages</li>
+                                    <li class="menu__list__description">repas pour groupes</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </section>
+                    
+                    <p class="home__container__left__text">la cave</p>
+                    <button class="home__button home__container__left__button--wine">cartes des vins</button>
+                    <section class="wines">
+                        <article class="wines__items">
+                            <div class="wines__item">
+                                <h3 class="wines__title">Vins rouges</h3>
+                                <p class="wines__name">2004 Saumur les rivières</p>
+                                <p class="wines__name">2003 Côteau du lyonnais le pot des voraces</p>
+                                <p class="wines__name">2004 bergerac château de la hute metairie</p>
+                            </div>
+                            <div class="wines__item">
+                                <h3 class="wines__title">Vins rosés</h3>
+                                <p class="wines__name">2004 costieres de nimes château saint Louis la perdrix</p>
+                                <p class="wines__name">2004 Côte de provence Cesar Mestralou</p>
+                            </div>
+                            <div class="wines__item">
+                                <h3 class="wines__title">Vins blancs</h3>
+                                <p class="wines__name">2003 Entre deux mers bordeaux château de sanse</p>
+                                <p class="wines__name">2005 musacadetcoteaux de la loire cour de rohan (au verre 12cl ou carafon)</p>
+                            </div>
+                        </article>
+                    </section>
+                    <button class="home__button home__container__left__button--soft">alcools et soft</button>
+                    <article class="soft__items">
+                        <div class="soft__item">
+                            <h3 class="soft__title">les whisky</h3>
+                            <p class="soft__name">Crowley</p>
+                            <p class="soft__name">Glenfiddich</p>
+                            <p class="soft__name">Supplément jus de fruit, soda</p>
+                        </div>
+                        <div class="soft__item">
+                            <h3 class="soft__title">Apéritifs</h3>
+                            <p class="soft__name">Pastis 51</p>
+                            <p class="soft__name">Ricard</p>
+                            <p class="soft__name">Martini rouge</p>
+                            <p class="soft__name">Martini blanc</p>
+                            <p class="soft__name">Campari</p>
+                            <p class="soft__name">Américano maison</p>
+                            <p class="soft__name">Suze</p>
+                            <p class="soft__name">Muscat de risevalte</p>
+                            <p class="soft__name">Rhum</p>
+                            <p class="soft__name">Gin</p>
+                            <p class="soft__name">Vodka</p>
+                            <p class="soft__name">Malibu</p>
+                            <p class="soft__name">Kir au vin blanc</p>
+                            <p class="soft__name">Porto rouge</p>
+                            <p class="soft__name">Porto blanc</p>
+                            <p class="soft__name">Martini gin</p>
+                        </div>
+                        <div class="soft__item">
+                            <h3 class="soft__title">Les biéres</h3>
+                            <p class="soft__name">Pression leffe blonde</p>
+                            <p class="soft__name">Picon bière</p>
+                            <p class="soft__name">Hoegaarden blanche</p>
+                            <p class="soft__name">Leffe blonde</p>
+                            <p class="soft__name">Desperados</p>
+                        </div>
+                        <div class="soft__item">
+                            <h3 class="soft__title">Jus de fruits, soda, eau</h3>
+                            <p class="soft__name">Vittel</p>
+                            <p class="soft__name">Badoit</p>
+                            <p class="soft__name">Saint pelegrino</p>
+                            <p class="soft__name">coca-cola</p>
+                            <p class="soft__name">coca-cola light</p>
+                            <p class="soft__name">limonade</p>
+                            <p class="soft__name">diabolo</p>
+                            <p class="soft__name">orangina</p>
+                            <p class="soft__name">perrier</p>
+                            <p class="soft__name">schweppes</p>
+                        </div>
+                    </article>
+                    <h2 class="home__container__left__title">Salle de séminaire</h2>
+                    <button class="home__button home__container__left__button--seminars">plus d'informations</button>
+                    <section class="seminars">
+                        <article class="seminars__items">
+                            <div class="seminars__item">
+                                <h3 class="seminars__title">L'hotel accueil des séminaires</h3>
+                                <p class="seminars__text">Pour vos réunions de travails, un service de location de salle est mis à votre disposition, où par ailleurs,
+                                    un service de pauses café, de formules repas... peut vous être proposé.
+                                </p>
+                                <p class="seminars__text">Contactez-nous pour connaître les modalités de réservations, les caractéristiques et disponibilités des salles...</p>
+                                <p class="seminars__text">Deux salles de réunions modulables de 80m2, lumière du jour avec cloison mobiles</p>
+                                <h4 class="seminars__service">équipements gratuit</h4>
+                                <p class="seminars__text">vidéo projecteur</p>
+                                <p class="seminars__text">paperboard digital</p>
+                                <p class="seminars__text">écran tactile</p>
+                            </div>
+                        </article>
+                    </section>
+                </section> #}
+                
+                <section class="home__container__right">
+                    <h1 class="home__title">L'hotel du nord</h1>
+                    <div class="home__container__right__description">
+                        <p>
+                            L'hôtel du Nord, établissement 3 étoiles est un hôtel-restaurant qui vient d'être entièrement
+                            rénové. Les salles pour les séminaires bénéficie de la technologie dernier cri et permettent un
+                            environnement serein.
+                        </p>
+                    </div>
+                    <div id="carousel1">
+                        <div class="item">
+                            <div class="item__image">
+                                <img src="./images/facade.jpg" alt="facade de l'hotel" class="carousel-img">
+                            </div>
+                            <div class="item__body">
+                                <div class="item__title">
+                                    Hotêl du nord
+                                </div>
+                                <div class="item__description">
+                                    Etablissement 3 étoiles est un hôtel-restaurant qui vient d'être entièrement 
+                                    rénové. Les salles pour les séminaires bénéficie de la technologie dernier cri et permettent un environnement serein.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__image">
+                                <img src="./images/resto.jpg" alt="facade de l'hotel" class="carousel-img">
+                            </div>
+                            <div class="item__body">
+                                <div class="item__title">
+                                    Salle du restaurant
+                                </div>
+                                <div class="item__description">
+                                    Descriptions
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__image">
+                                <img src="./images/reunion.jpg" alt="facade de l'hotel" class="carousel-img">
+                            </div>
+                            <div class="item__body">
+                                <div class="item__title">
+                                    Piéce privative
+                                </div>
+                                <div class="item__description">
+                                    Cette pièce peut être réservé pour vos séminaire
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__image">
+                                <img src="./images/piscine.jpeg" alt="facade de l'hotel" class="carousel-img">
+                            </div>
+                            <div class="item__body">
+                                <div class="item__title">
+                                    La piscine de l'hôtel
+                                </div>
+                                <div class="item__description">
+                                    Chauffée à 30 dégrès ...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__image">
+                                <img src="./images/chambre.jpg" alt="facade de l'hotel" class="carousel-img">
+                            </div>
+                            <div class="item__body">
+                                <div class="item__title">
+                                    Chambre
+                                </div>
+                                <div class="item__description">
+                                    Une de nos chambre de 20m2, climatisé ...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% include "@info/_info.html.twig" %}
+        </main>
+{% endblock %}
